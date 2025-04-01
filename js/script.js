@@ -70,6 +70,7 @@ for(let i = 0; i<cardBtn.length ; i ++ ){
     })
 }
 document.getElementById('last-link').addEventListener("click",function(){
+    document.getElementById('ber').innerHTML = "";
      document.getElementById('sec-2').style.display = "block"
       document.getElementById('head-ban').style.display = "flex"
       document.getElementById("bdr").style.display = "block"
@@ -82,7 +83,7 @@ document.getElementById('last-link').addEventListener("click",function(){
     document.getElementById('blog-part').style.display = "block"
     document.getElementById('about-part').style.display = "block"
     document.getElementById('contact-part').style.display = "block"
-    
+    document.getElementById('home-part').classList.add('text-green-500')
     
 
     
@@ -132,21 +133,7 @@ document.getElementById("bdr").addEventListener("click",function(event){
         }
         document.querySelector("form").submit()
     }
-    // if(event.target.id === "submit-frm") {
-    //     event.preventDefault(); // ফর্ম সাবমিট বন্ধ করবে (যদি প্রয়োজন হয়)
-
-    //     const address = document.getElementById("fn").value;
-    //     const email = document.getElementById("email").value;
-    //     const product = document.getElementById("product").value;
-
-    //     if(address === "" || email === "" || product === "") {
-    //         alert("সব তথ্য পূরণ করুন!");
-    //         return;
-    //     }
-
-       
-    //     document.querySelector("form").submit(); // ফর্ম সাবমিট করবে
-    // }
+  
 })
 
 document.getElementById('load-shop').addEventListener("click",function(event){
@@ -161,6 +148,7 @@ document.getElementById('blog-part').addEventListener("click",function(event){
        document.getElementById('about-section').style.display = "none"
         document.getElementById('blog-section').style.display = "block"
         document.getElementById("bdr").style.display = "none"
+        document.getElementById('home-part').classList.remove('text-green-500')
 
 
 })
@@ -171,6 +159,7 @@ document.getElementById('about-part').addEventListener("click",function(event){
     document.getElementById('contact-us').style.display = "none"
     document.getElementById('blog-section').style.display = "none"
     document.getElementById('about-section').style.display = "block"
+    document.getElementById('home-part').classList.remove('text-green-500')
 
 })
 
@@ -181,6 +170,7 @@ document.getElementById('contact-part').addEventListener("click",function(event)
     document.getElementById('contact-us').style.display = "block"
     document.getElementById('blog-section').style.display = "none"
     document.getElementById('about-section').style.display = "none"
+    document.getElementById('home-part').classList.remove('text-green-500')
 
 })
 
