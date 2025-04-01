@@ -70,7 +70,7 @@ for(let i = 0; i<cardBtn.length ; i ++ ){
     })
 }
 document.getElementById('last-link').addEventListener("click",function(){
-    document.getElementById('ber').innerHTML = "";
+    document.getElementById('bdr').innerHTML = "";
      document.getElementById('sec-2').style.display = "block"
       document.getElementById('head-ban').style.display = "flex"
       document.getElementById("bdr").style.display = "block"
