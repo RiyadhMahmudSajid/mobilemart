@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/97488faf0c.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        .blog-banner{
+            background-image: url(./Blogimage/Blogbanner.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+            
+        }
+        .about-banner{
+            background-image: url(./Blogimage/aboutbanner.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .contact{
+            background-image: url(./Blogimage/contact.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+        .active{
+            color: green;
+        }
+        .card-btn i{
+            color: orange;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class=" py-4 px-20 flex justify-between bg-[#E3E6F3] z-10 fixed top-0 w-[100%]">
+            <div>
+                <img class="w-28" src="./images/logo.png" alt="" srcset="">
+            </div>
+            <div>
+                <ul class="flex  gap-8">
+                    <li class="all-btn" id="home-part"><a  href="#">Home</a></li>
+                    <li class="all-btn" id="blog-part"><a  href="#">Blog</a></li>
+                    <li class="all-btn" id="about-part"><a href="#">About</a></li>
+                    <li class="all-btn" id="contact-part"><a href="#">Contact</a></li>
+                    <li class="all-btn" id="last-link" style="display: none;"><a href="#">Back</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="head-ban" class="w-11/12 mx-auto flex items-center justify-between py-20">
+            <div>
+                <h3 class="font-semibold text-xl text-[#363A42]">Upgrade to the Latest Smartphones!</h3>
+                <h1 class="font-bold text-5xl text-[#232323] py-4">Stay with top brands <br> & best deals.</h1>
+                <h3 class="font-medium text-xl text-gray-500 pb-3">Big Sale on Smartphones!</h3>
+                <button class="bg-blue-600 text-white py-2 px-4 mt-2 rounded-md">Shop Now</button>
+            </div>
+            <div>
+                <img src="./images/header.png" alt="">
+            </div>
+        </div>
+    </header>
+    <section id="sec-2" class="w-10/12 mx-auto pt-4 pb-10 ">
+        <div class="flex items-center justify-evenly">
+            <div class="p-2 shadow-md">
+                <div>
+                    <img class="w-28" src="./images/freeship3.png" alt="">
+                </div>
+                <div class="font-medium text-center pt-2">Free Shipping</div>
+            </div>
+            <div class="p-2 shadow-md ">
+                <div>
+                    <img class="w-28" src="./images/onlineorder.png" alt="">
+                </div>
+                <div class="font-medium  text-center pt-2">Online Order</div>
+            </div>
+            <div class="p-2 shadow-md">
+                <div>
+                    <img class="w-28" src="./images/savemoney.png" alt="">
+                </div>
+                <div class="font-medium  text-center pt-2">Save Money</div>
+            </div>
+            <div class="p-2 shadow-md">
+                <div>
+                    <img class="w-28" src="./images/support.png" alt="">
+                </div>
+                <div class="font-medium  text-center pt-2">Support </div>
+            </div>
+            <div class="p-2 shadow-md">
+                <div>
+                    <img class="w-28" src="./images/happycustomer.png" alt="">
+                </div>
+                <div class="font-medium  text-center pt-2">Happy</div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-3" class="w-10/12 mx-auto pt-8 pb-10 ">
+        <div>
+            <h2 class="font-bold text-4xl text-center">All Products</h2>
+            <h5 class="font-medium text-[16px] tracking-widest text-gray-500 pt-3 text-center">New feature for new generation</h5>
+        </div>
+        <div class="grid grid-cols-4 py-6 gap-5">
+            <div class="shadow-md card-btn  cursor-pointer" data-price="65">
+                <div>
+                    <img class="w-72" src="images/realme.png" alt="" srcset="">
+                </div>
+                <div class="pl-8">
+                    <h5>Realme-12</h5>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </p>
+                    <p>$65</p>
+                </div>
+                <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ut.</p>
+            </div>
+            <div class="shadow-md card-btn  cursor-pointer" data-price="55">
+                <div >
+                    <img  class="w-72" src="images/xiaomi.png" alt="" srcset="">
+                </div>
+                <div class="pl-8">
+                    <h5>xiaomi-mi-12</h5>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </p>
+                    <p>$55</p>
+                </div>
+                <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ut.</p>
+            </div>
+            <div class="shadow-md card-btn  cursor-pointer" data-price="75">
+                <div class="h-72">
+                    <img  class="w-72" src="images/samsunggalaxy.png" alt="" srcset="">
+                </div>
+                <div class="pl-8">
+                    <h5>samsung-galaxy-A53</h5>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </p>
+                    <p>$75</p>
+                </div>
+                <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ut.</p>
+            </div>
+            <div class="shadow-md card-btn  cursor-pointer" data-price = "130">
+                <div>
+                    <img  class="w-72" src="images/iphone.png" alt="" srcset="">
+                </div>
+                <div class="pl-8">
+                    <h5>iphone-15-pro</h5>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </p>
+                    <p>$130</p>
+                </div>
+                <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ut.</p>
+            </div>
+        </div>
+        <div id="load-extra" class="grid grid-cols-4 py-6 gap-5" style="display: none;">
+            <div class="shadow-md card-btn  cursor-pointer" data-price="65">
+                <div>
+                    <img class="w-72" src="images/walton.png" alt="" srcset="">
+                </div>
+                <div class="pl-8">
+                    <h5>Walton-12</h5>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </p>
+                    <p>$65</p>
+                </div>
+                <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ut.</p>
+            </div>
+            <div class="shadow-md card-btn  cursor-pointer" data-price="55">
+                <div >
+                    <img  class="w-72" src="images/walton2.png" alt="" srcset="">
+                </div>
+                <div class="pl-8">
+                    <h5>Walton-note</h5>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </p>
+                    <p>$55</p>
+                </div>
+                <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ut.</p>
+            </div>
+            <div class="shadow-md card-btn  cursor-pointer" data-price="75">
+                <div class="h-72">
+                    <img  class="w-72" src="images/iphone11.png" alt="" srcset="">
+                </div>
+                <div class="pl-8">
+                    <h5>iphone-11</h5>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </p>
+                    <p>$75</p>
+                </div>
+                <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ut.</p>
+            </div>
+            <div class="shadow-md card-btn  cursor-pointer" data-price = "130">
+                <div>
+                    <img  class="w-72" src="images/iphone5.png" alt="" srcset="">
+                </div>
+                <div class="pl-8">
+                    <h5>iphone-5</h5>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </p>
+                    <p>$130</p>
+                </div>
+                <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ut.</p>
+            </div>
+        </div>
+        
+
+    </section>
+    <button id="load-shop" class="py-3 px-20 text-white bg-blue-600 rounded-xl ml-[40%] cursor-pointer">LoadMore</button>
+    <section id="bdr" class="w-2/4 mx-auto pt-8">
+
+    </section>
+    <!--Blog Section-->
+    <section id="blog-section"style="display: none;" class="w-10/12 mx-auto pt-8 pb-10">
+        <div class="blog-banner h-40 rounded-sm mb-5">
+            <p class="text-center font-bold text-2xl pt-16 text-white">Our blog</p>
+        </div>
+        <div>
+            <div class="flex justify-evenly items-center mb-8 gap-7">
+                <div>
+                    <img  class="w-[800px] rounded-md" src="./Blogimage/ram.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold py-2">How to work Ram</h1>
+                    <p>RAM is the part of the phone that is used to store the operating system (OS) and where apps and data currently in use are kept. Whereas, phone storage is used to store data such as apps, photos, videos, and files that are necessary for the phone to run.</p>
+                    <p class="text-green-600 pt-2">ReadMore</p>
+                </div>
+            </div>
+            <div class="flex justify-evenly items-center mb-8 gap-7">
+                <div>
+                    <img  class="w-[800px] rounded-md" src="./Blogimage/rom.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold py-2">How to work Rom</h1>
+                    <p>A ROM, which serves as a primary storage medium on a mobile phone, can retain data even when the device is powered off. Since it is a read-only type of memory, it cannot be overwritten or modified. Don’t confuse it with the device’s internal storage, </p>
+                    <p class="text-green-600 pt-2">ReadMore</p>
+                </div>
+            </div>
+            
+            <div class="flex justify-evenly items-center mb-8 gap-7">
+                <div>
+                    <img  class="w-[800px] rounded-md" src="./Blogimage/samsungcomp.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold py-2">Samsung Company</h1>
+                    <p>South Korean multinational manufacturing conglomerate headquartered in the Samsung Town office complex in Seoul. The group consists of numerous affiliated businesses,[2] most of which operate under the Samsung brand,</p>
+                    <p class="text-green-600 pt-2">ReadMore</p>
+                </div>
+            </div>
+            <div class="flex justify-evenly items-center mb-8 gap-7">
+                <div>
+                    <img  class="w-[800px] rounded-md" src="./Blogimage/Motherbord.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold py-2">How to work Motherbord</h1>
+                    <p>The motherboard is the heart of your mobile phone, housing all the critical components that keep your device running smoothly. When it fails, it can lead to many issues that render your smartphone unusable.</p>
+                    <p class="text-green-600 pt-2">ReadMore</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-section"style="display: none;" class="w-10/12 mx-auto pt-8 pb-10 mb-5">
+        <div class="about-banner h-40 rounded-sm mb-5">
+            <p class="text-center font-bold text-2xl pt-16 text-white">About us</p>
+        </div>
+        <div>
+            <div class="flex justify-evenly items-center mb-8 gap-7">
+                <div>
+                    <img  class=" rounded-md" src="./Blogimage/ourbulding.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold py-2">Who we are</h1>
+                    <p>Mobile Mart is your go-to destination for the latest smartphones, accessories, and mobile gadgets. We offer a wide range of high-quality products from top brands, ensuring you stay connected with cutting-edge technology. Whether you’re looking for the newest flagship device, budget-friendly options, or premium accessories, Mobile Mart has it all at unbeatable prices.</p>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center flex-col">
+            <h2 class="text-2xl font-bold mb-10 text-green-600 cursor-pointer">Dowload our App</h2>
+            <img src="./Blogimage/down.PNG" alt="">
+        </div>
+    </section>
+    <!--contact us-->
+    <section id="contact-us" style="display: none;" class="w-10/12 mx-auto pt-8 pb-10 mb-5">
+        <div class="contact h-40 rounded-sm mb-5">
+            <p class="text-center font-bold text-2xl pt-16 text-white">Contact us</p>
+        </div>
+        <div class="flex justify-around items-center">
+            <div>
+                <h3 class="text-2xl font-bold">Visit on our shop</h3>
+                <h5 class="text-xl font-semibold">Head Office</h5>
+                <ul>
+                    <li>Basundara</li>
+                    <li>mobilemart@gmail.com</li>
+                    <li>Satuday to friday 9am to 10pm</li>
+                </ul>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3342.8211074681985!2d90.38775487484574!3d23.750898988758166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b90057f0349f%3A0x23db5f0369964886!2zQmFzdW5kaGFyYSBDaXR5IFNob3BwaW5nIENvbXBsZXggLCBVbmRlcmdyb3VuZCBtb2JpbGUgbWFya2V0IC0g4Kas4Ka44KeB4Kao4KeN4Kan4Kaw4Ka-IOCmuOCmv-Cmn-CmvyDgprbgpqrgpr_gpoIg4KaV4Kau4Kaq4KeN4Kay4KeH4KaV4KeN4Ka4LCDgpobgpqjgp43gpqHgpr7gprDgppfgp43gprDgpr7gpongpqjgp43gpqEg4Kau4KeL4Kas4Ka-4KaH4KayIOCmruCmvuCmsOCnjeCmleCnh-Cmnw!5e1!3m2!1sen!2sbd!4v1743398783745!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer class=" pt-8 pb-10  bg-[#E3E6F3] ">
+        <div class="w-10/12 mx-auto grid grid-cols-4">
+            <div >
+                <div>
+                    <img class="w-28" src="./images/logo.png" alt="" srcset="">
+                </div>
+                <h3 class="font-bold text-xl py-3">Contact</h3>
+                <ul>
+                    <li>Address:Basundra</li>
+                    <li>Phone:0154848978</li>
+                    <li>Hours:9pm to 10 am sat to thur</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-xl py-3">About</h3>
+                <ul>
+                    <li>About us</li>
+                    <li>Delivery Info</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-xl py-3">Account</h3>
+                <ul>
+                    <li>My Account</li>
+                    <li>View cart</li>
+                    <li>Help</li>
+                    <li>Terms</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-xl">Install app</h3>
+                <h3 class="font-semibold text-gray-700 py-5">From app store and play store</h3>
+                <div class="flex gap-2">
+                    <img class="w-28" src="./Blogimage/play.PNG" alt="">
+                    <img class="w-28" src="./Blogimage/app.PNG" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--"<div style='text-align: center; margin-top: 20px;'>
+        <button onclick=\"window.location.href='index.html'\" 
+                style='padding: 10px 20px; font-size: 16px; background-color: blue; color: white; border: none; cursor: pointer; border-radius: 5px;'>
+            Go to Home
+        </button>
+       </div>";-->
+      
+    <script src="./js/script.js"></script>
+</body>
+</html>
