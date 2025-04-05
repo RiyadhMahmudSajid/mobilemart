@@ -127,10 +127,11 @@ document.getElementById("bdr").addEventListener("click",function(event){
         const email = document.getElementById("email").value;
         const product = document.getElementById("product").value;
 
-        if(adderss === "" ||  email === "" || product === ""){
+        if(adderss === "" ||  email === "" || product === "" || !email.includes('@')){
             alert("Fill up all")
             return;
         }
+     
         document.querySelector("form").submit()
     }
   
@@ -196,15 +197,7 @@ for(let i = 0 ; i<allBtn.length; i++){
     })
 }
 
-document.addEventListener("click",function(event){
-    if(event.target.id === "submit-frm" ){
-        event.preventDefault();
-        const email = document.getElementById("email").value
-        if(!email.includes('@')){
-            alert("email is not valid")
-        }
-    }
-})
+
 
 
 
