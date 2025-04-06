@@ -126,9 +126,10 @@ document.getElementById("bdr").addEventListener("click",function(event){
         const adderss = document.getElementById("fn").value;
         const email = document.getElementById("email").value;
         const product = document.getElementById("product").value;
-
+        
         if(adderss === "" ||  email === "" || product === "" || !email.includes('@')){
             alert("Fill up all")
+            
             return;
         }
      

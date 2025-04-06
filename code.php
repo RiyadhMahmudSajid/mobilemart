@@ -25,6 +25,6 @@
   $eml = $_POST['email'];
   $por = $_POST['product'];
 
-  $query = "INSERT INTO info(Address,email,Product)VALUES(' $ad','$eml','$por')";
+  $query = "INSERT INTO inform(Address,email,Product)VALUES(' $ad','$eml','$por')";
   mysqli_query($con,$query);
 ?>
